@@ -1,0 +1,13 @@
+[package]
+name = "rustlings-fix"
+authors = ["Jack Clayton"]
+description = "Fixes rustlings exercises to work with rust-analyzer language server"
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+glob = "0.3.0"
+home = "0.5.3"
+serde = { version = "1.0.133", features = ["derive"] }
+serde_json = "1.0.74"
