@@ -16,6 +16,7 @@ pub struct Crate {
     root_module: String,
     edition: String,
     deps: Vec<String>,
+    cfg: Vec<String>,
 }
 
 impl RustAnalyzerProject {
@@ -43,6 +44,7 @@ impl RustAnalyzerProject {
                     root_module: path,
                     edition: "2021".to_string(),
                     deps: Vec::new(),
+                    cfg: vec!["test".to_string()],
                 })
             }
         }
@@ -82,13 +84,4 @@ impl RustAnalyzerProject {
         self.sysroot_src = sysroot_src;
         Ok(())
     }
-}
-
-#[test]
-fn parses_exercises() {
-    let mut rust_project = RustAnalyzerProject::new();
-    rust_project
-        .exercies_to_json()
-        .expect("Failed to parse exercises");
-    assert_eq!(rust_project.crates.len() > 0, true);
 }
