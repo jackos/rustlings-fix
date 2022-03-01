@@ -4,7 +4,7 @@ authors = ["Jack Clayton"]
 homepage = "https://github.com/jackos/rustlings-fix"
 description = "Fixes rustlings exercises to work with rust-analyzer language server"
 license = "MIT"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 
 [dependencies]
