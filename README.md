@@ -1,4 +1,8 @@
 # Rustlings Fix
+__This is now built into rustlings__ 
+
+You can now do `rustlings lsp` to fix rust analyzer so it works with rustlings.
+
 ## Quickstart
 ```bash
 # Install rustlings-fix from cargo
